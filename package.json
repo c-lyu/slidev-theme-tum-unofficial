@@ -13,6 +13,9 @@
       "slidev-theme",
       "slidev"
   ],
+  "slidev": {
+    "colorSchema": "light"
+  },
   "main": "example.md",
   "scripts": {
       "build": "slidev build example.md",
