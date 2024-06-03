@@ -1,0 +1,29 @@
+.subtitle {
+  @apply -mt-2 opacity-50 mb-4;
+}
+
+.caption {
+  @apply mt-2 text-center text-base italic font-serif;
+}
+
+.compact-table {
+  table {
+    @apply mx-auto w-full text-base;
+    th, td {
+      @apply p-1;
+    }
+  }
+}
+
+.compacter-table {
+  table {
+    @apply mx-auto w-full text-base;
+    th, td {
+      @apply p-0.8;
+    }
+  }
+}
+
+.small-tag{
+  @apply border-rounded bg-gray-200 text-gray-600 text-base px-4 py-1 mx-4 mt-2;
+}
