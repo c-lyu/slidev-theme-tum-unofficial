@@ -41,7 +41,7 @@ ins, s {
 }
 
 .slidev-layout blockquote {
-  @apply py-3 px-4；
+  @apply py-3 px-4;
   @apply border-none border-rounded-lg;
   @apply bg-tumblue-50 text-tumblue-700;
   @apply font-500 italic;

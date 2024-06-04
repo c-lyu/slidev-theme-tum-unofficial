@@ -1,43 +1,43 @@
 .think-container {
-    @apply rounded-lg overflow-hidden my-2;
+  @apply rounded-lg overflow-hidden my-2;
 }
 
 .think-text {
-    @apply px-6 py-4 font-serif italic;
+  @apply px-6 py-4 font-serif italic font-600;
 }
 
 .marker-base {
-    @apply px-2 py-1 border-rounded-lg font-600;
+  @apply px-2 py-1 border-rounded-lg font-600;
 }
 
 mark {
-    @apply px-2 py-1 border-rounded-lg font-600 bg-tumblue-50 text-tumblue-700;
+  @apply px-2 py-1 border-rounded-lg font-600 bg-tumblue-50 text-tumblue-700;
 }
 
 .footer {
-    @apply absolute bottom-0 left-0 right-0 flex flex-row justify-between border-t-1 border-t-sky-700 text-black-600 text-xs;
+  @apply absolute bottom-0 left-0 right-0 flex flex-row justify-between border-t-1 border-t-sky-700 text-black-600 text-xs;
 }
 
 .card-container {
-    @apply rounded-lg overflow-hidden border-1 border-gray-200 my-2;
+  @apply rounded-lg overflow-hidden border-1 border-gray-200 my-2;
 
-    .card-container-inner {
-        @apply px-6 py-4 border-b-1 border-gray-100;
+  .card-container-inner {
+    @apply px-6 py-4 border-b-1 border-gray-100;
 
-        h2 {
-            @apply text-lg font-semibold;
-        }
+    h2 {
+      @apply text-lg font-semibold;
     }
+  }
 
-    .card-content {
-        @apply px-6 py-4;
-    }
+  .card-content {
+    @apply px-6 py-4;
+  }
 }
 
 .filter-white {
-    filter: brightness(0%) invert(1);
+  filter: brightness(0%) invert(1);
 }
 
 .empty-space {
-    @apply w-2 inline-block;
+  @apply w-2 inline-block;
 }
