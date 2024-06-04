@@ -94,6 +94,16 @@ Think about this?
 
 
 ---
+
+# Other Useful Information
+
+==Important information==
+
+The content of this slide is ++very important++.
+
+<Image src="https://cover.sli.dev" alt="Beautiful Image" figureClass="w-120" />
+
+---
 layout: ending
 ---
 
