@@ -1,14 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
+import flagPhoto from '../static/tum-flag.jpg'
 
-const props = defineProps({
-  background: {
-    default: '/assets/tum-flag.jpg',
-  },
-})
-
-const style = computed(() => handleBackground(props.background, true))
+const style = computed(() => handleBackground(flagPhoto, true))
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-import schoolLogo from '/assets/tum-logo.svg'
+import schoolLogo from '../static/tum-logo.svg'
 </script>
 
 <template>
