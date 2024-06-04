@@ -33,8 +33,6 @@ layout: section
 section: Methodology
 ---
 
-# Methodology
-
 
 ---
 
@@ -74,8 +72,6 @@ This is the content of the right column.
 layout: section
 section: Results
 ---
-
-# Results
 
 
 ---
