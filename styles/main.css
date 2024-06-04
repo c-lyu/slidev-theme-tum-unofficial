@@ -36,6 +36,6 @@ figcaption {
   @apply text-xl font-500;
 }
 
-ins {
+ins, s {
   @apply decoration-tumblue-700 decoration-2;
 }

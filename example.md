@@ -101,6 +101,8 @@ Think about this?
 
 The content of this slide is ++very important++.
 
+~~Nothing~~ to see here.
+
 <Image src="https://cover.sli.dev" alt="Beautiful Image" figureClass="w-120" />
 
 ---
