@@ -22,10 +22,10 @@ export default defineConfig({
   },
   theme: {
     colors: {
-      'veryCool': '#0000ff', // class="text-very-cool"
       'tumblue': {
         '50': '#F0F8FF', // class="bg-tumblue-50"
         '100': '#E0F1FF', // class="bg-tumblue-100"
+        '500': '#0488FB', // class="bg-tumblue-500"
         '700': '#0065BD', // class="bg-tumblue-700"
       }
     },

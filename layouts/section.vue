@@ -34,7 +34,7 @@ const currentSection = computed(() => {
 
 <style scoped>
 .section-back {
-  background-color: #005cb1;
+  @apply bg-tumblue-700;
 }
 </style>
 
