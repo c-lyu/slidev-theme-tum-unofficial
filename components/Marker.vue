@@ -11,6 +11,7 @@ interface Presets {
 }
 
 const presets: Presets = {
+  tumblue: { background: 'bg-tumblue-100', text: 'text-tumblue-700' },
   sky: { background: 'bg-sky-100', text: 'text-sky-700' },
   blue: { background: 'bg-blue-100', text: 'text-blue-700' },
   red: { background: 'bg-red-100', text: 'text-red-700' },
@@ -23,13 +24,13 @@ const presets: Presets = {
 const props = defineProps({
   color: {
     type: String,
-    default: "sky"
+    default: "tumblue"
   },
 })
 
 const colorSet = computed(() => {
   const preset = presets[props.color];
-  return preset ? [preset.background, preset.text] : ['bg-sky-100', 'text-sky-700'];
+  return preset ? [preset.background, preset.text] : ['bg-tumblue-100', 'text-tumblue-700'];
 });
 </script>
 

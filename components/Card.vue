@@ -9,7 +9,7 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: 'sky',
+    default: 'tumblue',
   },
 })
 
