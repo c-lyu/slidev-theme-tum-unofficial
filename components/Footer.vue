@@ -34,7 +34,7 @@ const currentSection = computed(() => {
 <template>
   <footer class="footer">
     <div class="p1 ml2">
-      {{ $slidev.configs.course_short || "Unknown title" }} &nbsp;|&nbsp;
+      {{ $slidev.configs.event_short || "Unknown title" }} &nbsp;|&nbsp;
       {{ $slidev.configs.title || "Unknown title" }} 
       <span v-if="currentSection">&nbsp;|&nbsp; {{ currentSection }}</span>
     </div>
