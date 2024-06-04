@@ -31,6 +31,8 @@
     "@iconify-json/mingcute": "^1.1.17",
     "prism-theme-vars": "^0.2.5",
     "codemirror-theme-vars": "^0.1.2",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-ins": "^4.0.0",
     "vue": "^3.4.27"
   }
 }
