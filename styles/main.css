@@ -39,3 +39,10 @@ figcaption {
 ins, s {
   @apply decoration-tumblue-700 decoration-2;
 }
+
+.slidev-layout blockquote {
+  @apply py-3 px-4；
+  @apply border-none border-rounded-lg;
+  @apply bg-tumblue-50 text-tumblue-700;
+  @apply font-500 italic;
+}
