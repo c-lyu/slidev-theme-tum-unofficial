@@ -6,6 +6,10 @@
   @apply mt-2 text-center text-base italic font-serif;
 }
 
+figcaption {
+  @apply mt-1 text-center text-base italic font-serif;
+}
+
 .compact-table {
   table {
     @apply mx-auto w-full text-base;
@@ -30,4 +34,8 @@
 
 .text-event {
   @apply text-xl font-500;
+}
+
+ins {
+  @apply decoration-tumblue-700 decoration-2;
 }

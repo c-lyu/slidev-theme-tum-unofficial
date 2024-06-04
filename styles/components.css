@@ -10,6 +10,10 @@
     @apply px-2 py-1 border-rounded-lg font-600;
 }
 
+mark {
+    @apply px-2 py-1 border-rounded-lg font-600 bg-tumblue-50 text-tumblue-700;
+}
+
 .footer {
     @apply absolute bottom-0 left-0 right-0 flex flex-row justify-between border-t-1 border-t-sky-700 text-black-600 text-xs;
 }
