@@ -15,13 +15,13 @@ const props = defineProps({
     <div class="col-header">
       <slot />
     </div>
-    <div class="col-left" :class="props.class">
+    <div class="col-left" :class="class">
       <slot name="left" />
     </div>
-    <div class="col-right" :class="props.class">
+    <div class="col-right" :class="class">
       <slot name="right" />
     </div>
-    <div class="col-bottom" :class="props.class">
+    <div class="col-bottom" :class="class">
       <slot name="bottom" />
     </div>
   </div>
