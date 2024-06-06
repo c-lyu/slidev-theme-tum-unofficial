@@ -22,6 +22,9 @@ export default defineConfig({
   },
   theme: {
     colors: {
+      'coral': '#FF7F50', // class="bg-coral"
+      'crimson': '#DC143C', // class="bg-crimson"
+      'royalblue': '#4169E1', // class="bg-royalblue"
       'tumblue': {
         '50': '#F0F8FF', // class="bg-tumblue-50"
         '100': '#E0F1FF', // class="bg-tumblue-100"
