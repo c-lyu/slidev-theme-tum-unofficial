@@ -1,8 +1,8 @@
 ---
 theme: ./
 
-event: International Conference on Fancy Stuff
-event_short: ICFS
+event: Event title (International Conference on Something)
+event_short: ICS
 title: This is a very long title that should be split into multiple lines
 footer: true
 date: 31/05/2024
@@ -14,34 +14,32 @@ department: TUM School of Something
 chair: Chair of Something
 location: Munich
 
+mdc: true
 ---
 
 ---
 
-# Background
+# This is a Title
 
-<div class="subtitle">This is a long story</div>
+[This is a subtitle]{.subtitle}
 
 - This is a list
 - With multiple items
 - That should be displayed
 - In a nice way
 
-
 ---
 layout: section
-section: Methodology
+section: This is a Section
 ---
 
-
 ---
 
-# Methodology
+# A new title
 
-This is a <Marker>slide</Marker> with a title and some content.
+This is a <Marker color='orange'>slide</Marker> with a title and some content.
 
 <img src="https://cover.sli.dev" alt="Some image" class="w-120" />
-
 
 ---
 layout: two-cols-header
@@ -60,52 +58,49 @@ This is the content of the left column.
 
 ::right::
 
+::alert{icon='check'}
 This is the content of the right column.
+::
 
 - This is a list
 - With multiple items
 - That should be displayed
 - In a nice way
-
 
 ---
 layout: section
 section: Results
 ---
 
-
 ---
 
 # Some Useful Information
 
-<Card title="This is a card">
+::card{title="This is a card"}
 This is the content of the card.
 
 - This is a list
 - With multiple items
 - That should be displayed
 - In a nice way
-</Card>
+::
 
-
-<Think>
+::think
 Think about this?
-</Think>
-
+::
 
 ---
 
 # Other Useful Information
 
-==Important information==
+==Highlighted information==
 
-The content of this slide is ++very important++.
+This is an ++underlined information++.
 
-~~Nothing~~ to see here.
+This is a ~~Nothing~~ to see here.
 
-<Image src="https://cover.sli.dev" alt="Beautiful Image" figureClass="w-120" />
+<Image src="https://cover.sli.dev" alt="Beautiful Image" figureClass="w-80" />
 
 ---
 layout: ending
 ---
-
