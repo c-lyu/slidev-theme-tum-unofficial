@@ -23,6 +23,8 @@ const bgPresets: ColorPresets = {
   purple: 'bg-purple-50',
   pink: 'bg-pink-50',
   orange: 'bg-orange-50',
+  cyan: 'bg-cyan-50',
+  gray: 'bg-gray-50',
 };
 
 const textPresets: ColorPresets = {
@@ -35,6 +37,8 @@ const textPresets: ColorPresets = {
   purple: 'text-purple-700',
   pink: 'text-pink-700',
   orange: 'text-orange-700',
+  cyan: 'text-cyan-700',
+  gray: 'text-gray-700',
 };
 
 const bgPreset = computed(() => {

@@ -6,7 +6,6 @@ const sections = computed(() => {
   const result: [string, number[]][] = [];
   let pages: number[] = [];
   let title = "";
-  console.log(typeof($slidev.nav.slides))
   for(let i = 1; i < $slidev.nav.slides.length; i++) {
     const slide = $slidev.nav.slides[i];
     const section = (slide.meta?.slide as SlideInfoBase)?.frontmatter?.section;

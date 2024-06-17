@@ -12,6 +12,9 @@ const props = defineProps({
   },
   class: {
     type: String,
+  },
+  caption: {
+    type: String,
   }
 })
 </script>
@@ -19,6 +22,6 @@ const props = defineProps({
 <template>
   <figure :class="figureClass">
     <img :src="src" :alt="alt" :class="class" />
-    <figcaption v-if="alt">{{ alt }}</figcaption>
+    <figcaption v-html="caption || alt"></figcaption>
   </figure>
 </template>

@@ -46,3 +46,7 @@ ins, s {
   @apply bg-tumblue-50 text-tumblue-700;
   @apply font-500 italic;
 }
+
+.footnotes {
+  @apply text-base;
+}
