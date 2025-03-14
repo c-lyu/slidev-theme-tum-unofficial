@@ -7,7 +7,7 @@ An unofficial TUM presentation theme for [Slidev](https://sli.dev).
 To install the theme, run the following command in your Slidev project:
 
 ```bash
-pnpm add git+https://github.com/c-lyu/tum-stats-learn-svm.git
+pnpm add git+https://github.com/c-lyu/slidev-theme-tum-unofficial.git
 ```
 
 ## Usage
