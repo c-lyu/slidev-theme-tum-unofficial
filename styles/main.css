@@ -13,7 +13,8 @@ figcaption {
 .compact-table {
   table {
     @apply mx-auto w-full text-base;
-    th, td {
+    th,
+    td {
       @apply p-1;
     }
   }
@@ -22,13 +23,14 @@ figcaption {
 .compacter-table {
   table {
     @apply mx-auto w-full text-base;
-    th, td {
+    th,
+    td {
       @apply p-0.8;
     }
   }
 }
 
-.small-tag{
+.small-tag {
   @apply border-rounded bg-gray-200 text-gray-600 text-base px-4 py-1 mx-4 mt-2;
 }
 
@@ -36,7 +38,8 @@ figcaption {
   @apply text-xl font-500;
 }
 
-ins, s {
+ins,
+s {
   @apply decoration-tumblue-700 decoration-2;
 }
 
@@ -49,4 +52,10 @@ ins, s {
 
 .footnotes {
   @apply text-base;
+}
+
+.pcode {
+  ::marker {
+    @apply text-amber-600 opacity-20;
+  }
 }
