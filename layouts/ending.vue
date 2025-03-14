@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
-import flagPhoto from '../static/tum-flag.jpg'
+import flagPhoto from './assets/tum-flag.jpg'
 
 const style = computed(() => handleBackground(flagPhoto, true))
 </script>

@@ -1,5 +1,5 @@
 <script setup>
-import sketchLogo from '../static/tum-sketch.png'
+import sketchLogo from './assets/tum-sketch.png'
 </script>
 
 <template>
