@@ -58,7 +58,13 @@ The theme provides the following components:
   - `src`: Image source. (String)
   - `alt`: Image alternative text and caption text. (String)
   - `figureClass`: Image figure class. (String)
-  - `class`: Image class. (String)
+  - `imgClass`: Image class. (String)
+  - `objectFit`: Image object-fit style. (String, default: 'contain')
+  - `width`: Image width. (String | Number)
+  - `height`: Image height. (String | Number)
+  - `caption`: Image caption text. (String)
+  - `lazy`: Enable lazy loading. (Boolean, default: true)
+  - `fallbackSrc`: Fallback image source if original fails to load. (String)
 - **Marker**: Marker box
   - `color`: Marker color. (String: `tumblue` | `red` | `green` | `sky` | `blue` | `yellow` | `purple` | `pink` | `orange`)
 
