@@ -31,16 +31,10 @@ const currentSection = computed(() => {
 });
 </script>
 
-<style scoped>
-.section-back {
-  @apply bg-tumblue-700;
-}
-</style>
-
 <template>
   <TumLogo white=true />
-  <div class="slidev-layout w-full h-full grid section-back">
-    <div class="main-content text-white">
+  <div class="slidev-layout section w-full h-full grid section-back">
+    <div class="main-content text-white  flex flex-col justify-center">
       <h1>{{ currentSection }}</h1>
       <slot />
     </div>

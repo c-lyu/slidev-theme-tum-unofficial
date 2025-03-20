@@ -8,11 +8,11 @@ const style = computed(() => handleBackground(flagPhoto, true))
 
 <template>
   <div class="slidev-layout cover" :style="style">
-    <div class="main-content w-full">
-      <div class="text-event text-white opacity-65">{{ $slidev.configs.event }}</div>
-      <h1 class="opacity-75">{{ $slidev.configs.title }}</h1>
-      <AuthorInfo class="opacity-65" />
-      <slot />
+    <div class="main-content w-full flex flex-col justify-center items-justify">
+      <div>
+        <AuthorInfo class="opacity-65" />
+        <slot />
+      </div>
     </div>
   </div>
 </template>
