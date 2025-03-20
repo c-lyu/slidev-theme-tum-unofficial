@@ -1,8 +1,10 @@
+import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 import markPlugin from 'markdown-it-mark'
 import insPlugin from 'markdown-it-ins'
 
 export default defineConfig({
+  plugins: [UnoCSS()],
   slidev: {
     vue: {
       /* vue options */
@@ -17,4 +19,14 @@ export default defineConfig({
     },
     /* options for other plugins */
   },
+  server: {
+    fs: {
+      allow: [
+        // allow reading files from the theme folder
+        'theme',
+        // allow reading files from the parent folder
+        '.'
+      ]
+    }
+  }
 })

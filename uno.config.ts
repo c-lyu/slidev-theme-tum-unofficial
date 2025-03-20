@@ -3,8 +3,7 @@ import {
   presetAttributify,
   presetTypography,
   presetWebFonts,
-  presetUno,
-  presetWind,
+  presetWind3,
   presetIcons,
 } from 'unocss'
 
@@ -12,9 +11,8 @@ export default defineConfig({
   presets: [
     presetAttributify(),
     presetWebFonts(),
-    presetUno(),
+    presetWind3(),
     presetTypography(),
-    presetWind(),
     presetIcons(),
   ],
   shortcuts: {
