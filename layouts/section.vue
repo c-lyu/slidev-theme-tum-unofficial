@@ -40,7 +40,7 @@ const currentSection = computed(() => {
 <template>
   <TumLogo white=true />
   <div class="slidev-layout w-full h-full grid section-back">
-    <div class="my-auto text-white">
+    <div class="main-content text-white">
       <h1>{{ currentSection }}</h1>
       <slot />
     </div>

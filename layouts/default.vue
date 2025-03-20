@@ -1,7 +1,7 @@
 <template>
   <TumLogo />
   <div class="slidev-layout default">
-    <div class="my-auto">
+    <div class="main-content">
       <slot />
     </div>
   </div>
