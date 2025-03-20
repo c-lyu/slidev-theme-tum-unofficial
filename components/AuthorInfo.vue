@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const props = defineProps({
-  class: {
+defineProps({
+  customClass: {
     type: String,
   },
 })
 </script>
 
 <template>
-	<div class="text-xl" :class="props.class">
+	<div class="text-xl" :class="customClass">
 		<div class="pt2" v-if="$slidev.configs.author || $slidev.configs.email">
       <span v-if="$slidev.configs.author">{{ $slidev.configs.author }}</span>
       <br v-if="$slidev.configs.author && $slidev.configs.email">
