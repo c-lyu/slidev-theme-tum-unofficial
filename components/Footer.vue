@@ -29,18 +29,45 @@ const currentSection = computed(() => {
   }
   return "";
 });
+
+const progressPercentage = computed(() => {
+  return ($slidev.nav.currentPage / $slidev.nav.total) * 100;
+});
 </script>
 
 <template>
-  <footer class="footer">
+  <footer>
     <div class="p1 ml2">
-      {{ $slidev.configs.event_short || "Unknown title" }} &nbsp;|&nbsp;
-      {{ $slidev.configs.title || "Unknown title" }} 
+      <span v-if="$slidev.configs.short_event || $slidev.configs.event">
+        {{ $slidev.configs.short_event || $slidev.configs.event }} &nbsp;|&nbsp;
+      </span>
+      <span v-if="$slidev.configs.short_title || $slidev.configs.title">
+        {{ $slidev.configs.short_title || $slidev.configs.title }}
+      </span>
       <span v-if="currentSection">&nbsp;|&nbsp; {{ currentSection }}</span>
     </div>
     <div class="p1 mr2">
       {{ $slidev.nav.currentPage }} /
       <SlidesTotal />
     </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" :style="{ width: progressPercentage + '%' }"></div>
+    </div>
   </footer>
 </template>
+
+<style scoped>
+.progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.progress-bar {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+</style>
