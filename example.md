@@ -2,8 +2,9 @@
 theme: ./
 
 event: Event title (International Conference on Something)
-event_short: ICS
+short_event: ICS
 title: This is a very long title that should be split into multiple lines
+short_title: Short title
 footer: true
 date: 31/05/2024
 
