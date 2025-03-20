@@ -1,0 +1,51 @@
+/* Hide the default checkbox */
+.task-list-item-checkbox {
+  display: none;
+}
+
+/* Base list item styling */
+.task-list-item {
+  position: relative;
+  padding-left: 2.5em;
+  list-style-type: none;
+  margin: 0.5em 0;
+  pointer-events: none;
+  /* Prevent interactions */
+}
+
+/* Circular checkbox */
+.task-list-item label::before {
+  content: "";
+  position: absolute;
+  left: -1.35em;
+  /* Moved left */
+  top: 0.42em;
+  /* Fixed position relative to first line */
+  width: 1em;
+  height: 1em;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Hide the span with [x] or [ ] */
+.task-list-item label span {
+  display: none;
+}
+
+/* Style for checked items */
+.task-list-item input:checked+label::before {
+  background-color: #4a6cf7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.7em;
+  border-color: #4a6cf7;
+}
+
+.task-list-item label {
+  display: block;
+  position: relative;
+  padding-top: 0.15em;
+  line-height: 1.5;
+}
