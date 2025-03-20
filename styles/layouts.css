@@ -5,7 +5,9 @@
     @apply line-height-normal;
   }
 
-  p + h2, ul + h2, table + h2 {
+  p+h2,
+  ul+h2,
+  table+h2 {
     @apply mt-4;
   }
 
@@ -34,13 +36,16 @@
 
 .slidev-layout.fact {
   @apply text-center grid h-full;
+
   h1 {
     @apply text-8xl font-700;
   }
-  h1 + p {
+
+  h1+p {
     @apply font-700 text-2xl;
   }
 }
+
 .slidev-layout.statement {
   @apply text-center grid h-full;
 
@@ -48,13 +53,15 @@
     @apply text-6xl font-700;
   }
 }
+
 .slidev-layout.quote {
   @apply grid h-full;
 
-  h1 + p {
+  h1+p {
     @apply mt-2;
   }
 }
+
 .slidev-layout.section {
   h1 {
     @apply text-6xl font-500 leading-20;
