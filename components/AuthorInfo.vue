@@ -8,21 +8,21 @@ const props = defineProps({
 
 <template>
 	<div class="text-xl" :class="props.class">
-		<div class="pt2">
-      {{ $slidev.configs.author || "Unknown author" }}
-      <br>
-      {{ $slidev.configs.email || "Unknown email" }}
+		<div class="pt2" v-if="$slidev.configs.author || $slidev.configs.email">
+      <span v-if="$slidev.configs.author">{{ $slidev.configs.author }}</span>
+      <br v-if="$slidev.configs.author && $slidev.configs.email">
+      <span v-if="$slidev.configs.email">{{ $slidev.configs.email }}</span>
 		</div>
-    <div class="pt2">
-      {{ $slidev.configs.institute || "Unknown institute" }}
-      <br>
-      {{ $slidev.configs.department || "Unknown department" }}
-      <br>
-      {{ $slidev.configs.chair || "Unknown chair" }}
+    <div class="pt2" v-if="$slidev.configs.institute || $slidev.configs.department || $slidev.configs.chair">
+      <span v-if="$slidev.configs.institute">{{ $slidev.configs.institute }}</span>
+      <br v-if="$slidev.configs.institute && ($slidev.configs.department || $slidev.configs.chair)">
+      <span v-if="$slidev.configs.department">{{ $slidev.configs.department }}</span>
+      <br v-if="$slidev.configs.department && $slidev.configs.chair">
+      <span v-if="$slidev.configs.chair">{{ $slidev.configs.chair }}</span>
 		</div>
-    <div class="pt2">
-      <span v-if="$slidev.configs.location || false">{{ $slidev.configs.location }}, </span>
-      {{ $slidev.configs.date || new Date().toLocaleDateString() }}
+    <div class="pt2" v-if="$slidev.configs.location || true">
+      <span v-if="$slidev.configs.location">{{ $slidev.configs.location }}<span v-if="true">, </span></span>
+      <span>{{ $slidev.configs.date || new Date().toLocaleDateString() }}</span>
 		</div>
 	</div>
 </template>
