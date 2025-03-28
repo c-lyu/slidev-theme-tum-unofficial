@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { validColors } from '../utils/colors';
 
 const props = defineProps({
   title: {
@@ -13,30 +14,38 @@ const props = defineProps({
   },
 })
 
-interface ColorPresets {
-  [key: string]: string;
-}
-
-const colorPresets: ColorPresets = {
-  tumblue: 'text-tumblue-700',
-  red: 'text-red-700',
-  green: 'text-green-700',
-  sky: 'text-sky-700',
-  blue: 'text-blue-700',
-  yellow: 'text-yellow-700',
-  purple: 'text-purple-700',
-  pink: 'text-pink-700',
-  orange: 'text-orange-700',
+const getColorClasses = (colorName: string) => {
+  // Use default color if provided color is not valid
+  const color = validColors.includes(colorName) ? colorName : 'tumblue';
+  
+  return {
+    text: `text-${color}-700`,
+    border: `border-${color}-100`,
+    borderLight: `border-${color}-50`,
+    bg: `bg-${color}-50`,
+  };
 };
 
 const titleColor = computed(() => {
-  return colorPresets[props.color];
+  return getColorClasses(props.color).text;
+});
+
+const borderColor = computed(() => {
+  return getColorClasses(props.color).border;
+});
+
+const borderLightColor = computed(() => {
+  return getColorClasses(props.color).borderLight;
+});
+
+const bgColor = computed(() => {
+  return getColorClasses(props.color).bg;
 });
 </script>
 
 <template>
-  <div class="card-container">
-    <div class="card-container-inner">
+  <div class="card-container" :class="borderColor">
+    <div class="card-container-inner" :class="[borderLightColor, bgColor]">
       <h2 :class="titleColor">{{ props.title }}</h2>
     </div>
     <div class="card-content">
@@ -44,3 +53,25 @@ const titleColor = computed(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.card-container {
+  @apply rounded-lg overflow-hidden border-1 my-2;
+
+  .card-container-inner {
+    @apply px-6 py-4 border-b-1;
+
+    h2 {
+      @apply text-2xl font-semibold;
+    }
+  }
+
+  .card-content {
+    @apply px-6 py-4;
+
+    p {
+      @apply my-1;
+    }
+  }
+}
+</style>
