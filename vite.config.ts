@@ -1,10 +1,9 @@
-import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 import markPlugin from 'markdown-it-mark'
 import insPlugin from 'markdown-it-ins'
 
 export default defineConfig({
-  plugins: [UnoCSS()],
+  plugins: [],
   slidev: {
     vue: {
       /* vue options */
