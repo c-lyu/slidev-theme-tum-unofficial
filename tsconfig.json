@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["@slidev/cli"],
+    "lib": ["es6", "dom"]
+  }
+}

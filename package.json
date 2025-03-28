@@ -1,7 +1,7 @@
 {
   "name": "slidev-theme-tum-unofficial",
   "description": "An unofficial TUM presentation theme for Slidev",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": {
     "name": "C. Lyu",
     "website": "https://github.com/c-lyu"
@@ -16,12 +16,11 @@
   "slidev": {
     "colorSchema": "light"
   },
-  "main": "example.md",
   "scripts": {
-    "build": "slidev build example.md",
-    "dev": "slidev example.md --open",
-    "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format pdf",
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "screenshot": "slidev export --format pdf",
     "lint": "eslint --fix --ext .js,.ts,.vue ."
   },
   "dependencies": {
