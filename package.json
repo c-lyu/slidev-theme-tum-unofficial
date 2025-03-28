@@ -17,10 +17,10 @@
     "colorSchema": "light"
   },
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export",
-    "screenshot": "slidev export --format pdf",
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format pdf",
     "lint": "eslint --fix --ext .js,.ts,.vue ."
   },
   "dependencies": {
