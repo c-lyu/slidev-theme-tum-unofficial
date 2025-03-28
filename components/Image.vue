@@ -26,7 +26,7 @@ defineProps({
   },
   figureClass: {
     type: String,
-    default: ''
+    default: 'max-h-8/9'
   },
   imgClass: {
     type: String,
