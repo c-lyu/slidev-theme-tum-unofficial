@@ -70,4 +70,7 @@ const progressPercentage = computed(() => {
   background-color: #3b82f6;
   transition: width 0.3s ease;
 }
+footer {
+  @apply absolute bottom-0 left-0 right-0 flex flex-row justify-between border-t-1 border-t-tumblue-700 text-black-600 text-xs;
+}
 </style>
