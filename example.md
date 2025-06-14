@@ -16,6 +16,13 @@ chair: Chair of Something
 location: Munich
 
 mdc: true
+
+fonts:
+  provider: google
+  sans: Rubik
+  serif: Petrona
+  weight: '200;400;500;600;700'
+  italic: true
 ---
 
 ---
