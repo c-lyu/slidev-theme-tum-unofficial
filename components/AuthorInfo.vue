@@ -22,7 +22,7 @@ defineProps({
 		</div>
     <div class="pt2" v-if="$slidev.configs.location || true">
       <span v-if="$slidev.configs.location">{{ $slidev.configs.location }}<span v-if="true">, </span></span>
-      <span>{{ $slidev.configs.date || new Date().toLocaleDateString() }}</span>
+      <span>{{ $slidev.configs.date || new Date().toLocaleDateString($slidev.configs.local) }}</span>
 		</div>
 	</div>
 </template>
