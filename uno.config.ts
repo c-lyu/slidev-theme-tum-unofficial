@@ -2,7 +2,7 @@ import {
   defineConfig,
   presetAttributify,
   presetTypography,
-  presetWebFonts,
+  // presetWebFonts,
   presetWind3,
   presetIcons,
 } from 'unocss'
@@ -20,17 +20,17 @@ const colorVariants = [
 export default defineConfig({
   presets: [
     presetAttributify(),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        sans: ['Nunito', 'Inter'],
-        serif: [{
-          name: 'Libre Baskerville',
-          weights: ['400'],
-          italic: true,
-        }],
-      },
-    }),
+    // presetWebFonts({
+    //   provider: 'google',
+    //   fonts: {
+    //     sans: ['Rubik', 'Inter'],
+    //     serif: [{
+    //       name: 'Libre Baskerville',
+    //       weights: ['400'],
+    //       italic: true,
+    //     }],
+    //   },
+    // }),
     presetWind3(),
     presetTypography(),
     presetIcons(),
