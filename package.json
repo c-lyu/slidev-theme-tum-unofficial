@@ -8,7 +8,7 @@
   },
   "repository": "https://github.com/c-lyu/slidev-theme-tum-unofficial",
   "type": "module",
-  "private": true,
+  "private": false,
   "keywords": [
     "slidev-theme",
     "slidev"
