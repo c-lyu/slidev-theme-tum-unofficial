@@ -2,6 +2,9 @@
 
 An unofficial TUM presentation theme for [Slidev](https://sli.dev).
 
+![screenshot](image/screenshot-1.png)
+![screenshot](image/screenshot-2.png)
+
 ## Install
 
 To install the theme, run the following command in your Slidev project:
